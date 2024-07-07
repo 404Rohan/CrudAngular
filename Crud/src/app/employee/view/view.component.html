@@ -1,0 +1,29 @@
+<div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>EmpName</th>
+        <th>EmpSalary</th>
+        <th>EmpAge</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of empdata">
+        <td>{{ u.id }}</td>
+        <td>{{ u.empName }}</td>
+        <td>{{ u.empSalary }}</td>
+        <td>{{ u.empAge }}</td>
+        <td>
+          <button class="bg-primary lg" (click)="sendEditData(u)">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </button>
+          <button class="bg-secondary sm" (click)="deleteEmployee(u.id)">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

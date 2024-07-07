@@ -1,0 +1,23 @@
+
+<form [formGroup]="emmployeeForm" (ngSubmit)="onsubmitEmp()">
+  <div class="form-outline border-primary p-2">
+    <input class="w-100" type="text" formControlName="id" />
+    <label class="form-label">Enter Employee Id</label>
+  </div>
+  <div class="border-primary p-2">
+    <input class="w-100" type="text" formControlName="empName" />
+    <label class="form-label">Enter Employee Name</label>
+  </div>
+
+  <div class="border-primary p-2">
+    <input class="w-100" type="number" formControlName="empSalary" />
+    <label class="form-label">Enter Employee Salary</label>
+  </div>
+  <div class="border-primary p-2">
+    <input class="w-100" type="number" formControlName="empAge" />
+    <label class="form-label">Enter Employee Age</label>
+  </div>
+  <div>
+    <button class="btn btn-success w-100 p-2 btn-hover">Submit</button>
+  </div>
+</form>
